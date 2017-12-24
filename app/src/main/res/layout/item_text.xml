@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnlTextAndIconContainer"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginLeft="20dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <!--Label-->
+    <fontdroid.TextView
+        android:id="@+id/txtLabel"
+        style="@style/iranSansNormal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:padding="8dp"
+        android:textColor="@color/textColorDarkPrimary"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:padding="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+</LinearLayout>

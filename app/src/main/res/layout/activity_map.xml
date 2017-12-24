@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fontdroid.TextView
+                android:id="@+id/txtDriverName"
+                style="@style/iranSansMedium"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="راننده پویا"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imgNavigation"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/navigation_circle_back"
+                android:padding="3dp"
+                android:src="@mipmap/ic_navigation_white"
+                android:visibility="gone" />
+
+            <fontdroid.TextView
+                android:id="@+id/txtLastUpdate"
+                style="@style/ActionButtonLabel"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:minHeight="52dp"
+                android:padding="3dp"
+                android:text="آخرین بروز رسانی:\nهیچ وقت"
+                android:visibility="visible" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/lytChooseTime"
+                style="@style/ActionButtonContainer"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:visibility="gone"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <fontdroid.TextView
+                    android:id="@+id/txtEnter"
+                    style="@style/ActionButtonLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:text="انتخاب زمان" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/lytLastLocation"
+                    style="@style/ActionButtonContainer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <ir.edusa.parents.Utils.RTextView
+                        style="@style/ActionButtonLabel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:text="آخرین موقعیت"
+                        app:minTextSize="9dp"/>
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <include layout="@layout/divider_vertical" />
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/lytLiveLocation"
+                    style="@style/ActionButtonContainer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <ir.edusa.parents.Utils.RTextView
+                        style="@style/ActionButtonLabel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:text="نمایش زنده سرویس"
+                        app:minTextSize="9dp"/>
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <include layout="@layout/divider_vertical" />
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/lytPath"
+                    style="@style/ActionButtonContainer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <ir.edusa.parents.Utils.RTextView
+                        style="@style/ActionButtonLabel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:text="نمایش آفلاین سرویس"
+                        app:minTextSize="9dp"/>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

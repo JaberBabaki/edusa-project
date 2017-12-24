@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="56dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:src="@mipmap/app_icon" />
+
+            <TextView
+                style="@style/iranSansBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="EDUSA"
+                android:textColor="#000000"
+                android:textSize="22dp" />
+            <!--  Email Label -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/asdasd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
+
+                <fontdroid.EditText
+                    android:id="@+id/edtPhoneNumber"
+                    style="@style/iranSansNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="شماره موبایل"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  Password Label -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/lytPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <fontdroid.EditText
+                    android:id="@+id/edtPassword"
+                    style="@style/iranSansNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" کد امنیتی"
+                    android:inputType="numberPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/lytEnter"
+                style="@style/ActionButtonContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <fontdroid.TextView
+                    android:id="@+id/txtEnter"
+                    style="@style/ActionButtonLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="ورود" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "670746069208",
+    "firebase_url": "https://tmaproject-5bd53.firebaseio.com",
+    "project_id": "tmaproject-5bd53",
+    "storage_bucket": "tmaproject-5bd53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670746069208:android:44762f09b922ed44",
+        "android_client_info": {
+          "package_name": "ir.edusa.drivers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670746069208-vm70jsvj0d75ed3vtfqiddf4rrd7m0v1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDglo4X7i2HGf-_J7e6oe8nC83m7eZ7i7A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670746069208:android:1e4ce7c1105c2c12",
+        "android_client_info": {
+          "package_name": "ir.edusa.parents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670746069208-vm70jsvj0d75ed3vtfqiddf4rrd7m0v1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDglo4X7i2HGf-_J7e6oe8nC83m7eZ7i7A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

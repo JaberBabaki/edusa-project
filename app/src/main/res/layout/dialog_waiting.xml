@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <fontdroid.TextView
+                    android:id="@+id/txtErrorDialogText"
+                    style="@style/AppFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:minHeight="60dp"
+                    android:text="لطفا تا اعلام نتیجه منتظر بمانید"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lytLoading"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <!--ProgressWheel-->
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/progressWheel"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            app:matProg_barColor="@color/colorDividerRestaurantPage"
+            app:matProg_barWidth="2dp"
+            app:matProg_progressIndeterminate="true" />
+
+        <fontdroid.TextView
+            android:id="@+id/txtLoading"
+            style="@style/iranSansLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="در حال بررسی"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+</LinearLayout>

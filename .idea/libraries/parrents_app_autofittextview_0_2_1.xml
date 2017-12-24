@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="parrents-app:autofittextview-0.2.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../data/avd/.android/build-cache/02dc3fbf15a2ecb82702fc7444d6884b131cac0c/output/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../data/avd/.android/build-cache/02dc3fbf15a2ecb82702fc7444d6884b131cac0c/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

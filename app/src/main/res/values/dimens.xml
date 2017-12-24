@@ -1,0 +1,31 @@
+<resources>
+    <dimen name="textSizeToolbar">16dp</dimen>
+
+    <!--Action Button-->
+    <dimen name="orangeButtonMinHeight">42dp</dimen>
+    <dimen name="orangeButtonMinWidth">196dp</dimen>
+    <dimen name="orangeButtonMargin">2dp</dimen>
+    <dimen name="actionButtonMarginBottom">14dp</dimen>
+    <dimen name="actionButtonMarginTop">14dp</dimen>
+    <dimen name="actionButtonIconHeight">18dp</dimen>
+    <dimen name="actionButtonIconWidth">18dp</dimen>
+    <dimen name="actionButtonTextSize">14dp</dimen>
+
+
+    <!--Input Row-->
+    <dimen name="inputCardHeight">56dp</dimen>
+    <dimen name="inputEditTextLeftPadding">4dp</dimen>
+    <dimen name="textSizeInput">12dp</dimen>
+    <dimen name="inputIconHeight">36dp</dimen>
+    <dimen name="inputIconWidth">36dp</dimen>
+    <dimen name="inputIconMarginRight">12dp</dimen>
+    <dimen name="inputIconPadding">7dp</dimen>
+
+    <dimen name="textSizeBottomButton">15dp</dimen>
+
+    <!--Bottom Button-->
+    <dimen name="bottomButtonHeight">62dp</dimen>
+    <dimen name="bottomButtonIconHeight">24dp</dimen>
+    <dimen name="bottomButtonIconWidth">24dp</dimen>
+
+</resources>

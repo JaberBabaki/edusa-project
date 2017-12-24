@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <!--Main Container-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <!--Toolbar-->
+        <include layout="@layout/toolbar" />
+
+        <!--ScrollView-->
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <!--Main Container-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+
+                <!--Input Component-->
+                <LinearLayout
+                    style="@style/InputContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorCardBackground"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp">
+
+                        <ir.edusa.parents.Utils.SquareImageView
+                            android:id="@+id/image"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginBottom="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/man_profile_pic" />
+
+                        <LinearLayout
+                            android:id="@+id/lytUpload"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp">
+
+                            <fontdroid.TextView
+                                style="@style/iranSansBold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#47ffffff"
+                                android:gravity="center"
+                                android:text="آپلود عکس"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16dp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                    <!--Divider-->
+                    <include layout="@layout/divider_horizontal" />
+
+                    <!--Name-->
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/InputRowContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/inputCardHeight"
+                        android:gravity="center_vertical">
+
+                        <!--Name EditText-->
+                        <fontdroid.EditText
+                            android:id="@+id/edtName"
+                            style="@style/InputRowEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="first name"
+                            android:enabled="false"
+                            android:hint="نام" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--Divider-->
+                    <include layout="@layout/divider_horizontal" />
+
+                    <!--Last Name-->
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/InputRowContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/inputCardHeight"
+                        android:gravity="center_vertical">
+
+                        <!--Last Name EditText-->
+                        <fontdroid.EditText
+                            android:id="@+id/edtLastName"
+                            style="@style/InputRowEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="last name"
+                            android:enabled="false"
+                            android:hint="نام خانوادگی" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--Divider-->
+                    <include layout="@layout/divider_horizontal" />
+                    <!--Last Name-->
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/InputRowContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/inputCardHeight"
+                        android:gravity="center_vertical">
+
+                        <!--Last Name EditText-->
+                        <fontdroid.EditText
+                            android:id="@+id/edtCodeStudent"
+                            style="@style/InputRowEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="last name"
+                            android:enabled="false"
+                            android:hint="کد دانش آموز" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--Divider-->
+                    <include layout="@layout/divider_horizontal" />
+
+                    <!--Last Name-->
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/InputRowContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/inputCardHeight"
+                        android:gravity="center_vertical">
+
+                        <!--Last Name EditText-->
+                        <fontdroid.EditText
+                            android:id="@+id/edtOrganizationName"
+                            style="@style/InputRowEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="last name"
+                            android:enabled="false"
+                            android:hint="مدرسه" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <!--Divider-->
+                    <include layout="@layout/divider_horizontal" />
+                    <!--Last Name-->
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/InputRowContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/inputCardHeight">
+
+                        <!--Last Name EditText-->
+                        <fontdroid.EditText
+                            android:id="@+id/edtAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:gravity="right|center_vertical"
+                            android:hint="آدرس"
+                            android:lines="3"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="12dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytSetLocation"
+                        style="@style/ActionButtonContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:orientation="horizontal">
+
+                        <!--Select Address From Map Button-->
+                        <fontdroid.TextView
+                            style="@style/ActionButtonLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="مشخص کردن آدرس روی نقشه" />
+
+                    </LinearLayout>
+                    <!--Divider-->
+                    <include layout="@layout/divider_horizontal" />
+                    <!--Last Name EditText-->
+                    <fontdroid.TextView
+                        style="@style/iranSansBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:gravity="right|center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="مشخصات راننده :"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:id="@+id/lytDriversParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!--Register Button-->
+        <LinearLayout
+            android:id="@+id/lytEditProfile"
+            style="@style/BottomButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottomButtonHeight"
+            android:visibility="gone">
+
+            <!--Title-->
+            <fontdroid.TextView
+                style="@style/BottomButtonLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تغییر اطلاعات" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytLogout"
+        style="@style/ActionButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <!--Select Address From Map Button-->
+        <fontdroid.TextView
+            style="@style/ActionButtonLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="خروج از حساب کاربری" />
+
+    </LinearLayout>
+
+</RelativeLayout>

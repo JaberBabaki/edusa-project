@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('autofittextview-0.2.1.aar'))

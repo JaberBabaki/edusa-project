@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "202549313789",
+    "firebase_url": "https://parents-app-8e47f.firebaseio.com",
+    "project_id": "parents-app-8e47f",
+    "storage_bucket": "parents-app-8e47f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202549313789:android:a65db03b8378094a",
+        "android_client_info": {
+          "package_name": "com.tmaproject.parents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202549313789-0abfquu12lfshhpnd9d7v4iqveljop72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVPEa1f2R-wM1NrcAmZ-nPepGxGXZb5Sw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

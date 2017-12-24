@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundDark"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <fontdroid.TextView
+            android:id="@+id/txtDescription"
+            style="@style/iranSansMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="تاریخ مورد نظر برای اعلام غیبت به راننده را انتخاب نمایید."
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="13dp" />
+
+        <fontdroid.TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="انتخاب تاریخ"
+            android:lines="2"
+            android:padding="5dp"
+            android:textColor="@color/textColorDarkPrimary"
+            android:textColorHint="@color/textColorDarkHint"
+            android:textSize="14dp" />
+
+        <fontdroid.TextView
+            android:id="@+id/txtDriverName"
+            style="@style/iranSansMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="راننده پویا"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <fontdroid.RadioButton
+                android:id="@+id/rdiSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="مسیر برگشت"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13dp" />
+
+            <fontdroid.RadioButton
+                android:id="@+id/rdiFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="مسیر رفت"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13dp" />
+
+
+            <fontdroid.RadioButton
+                android:id="@+id/rdiBoth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:text="هر دو مسیر"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="13dp" />
+        </RadioGroup>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/lytAccept"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBottomButton"
+            android:gravity="center"
+            android:visibility="visible"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <fontdroid.TextView
+                    android:id="@+id/txtAccept"
+                    style="@style/ActionButtonLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="42dp"
+                    android:padding="3dp"
+                    android:text="تایید" />
+            </LinearLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

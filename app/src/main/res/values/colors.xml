@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--1EC666-->
+    <color name="colorTopBar">#1ec6c6</color>
+    <color name="textColorLight">#ffffff</color>
+    1ec6c6
+    <color name="colorPrimary">#1ec6c6</color>
+    <color name="colorPrimaryDark">#3E5050</color>
+    <color name="colorAccent">#0d0d0d</color>
+
+    <color name="colorBackground">#ffffff</color>
+    <color name="colorBackgroundDark">#dddddd</color>
+    <!--<color name="colorBottomButton">#aeea00</color>-->
+    <color name="colorBottomButton">#ff8a2c</color>
+    <color name="colorDivider">#efefef</color>
+    <color name="colorDividerRestaurantPage">#c8c8c8</color>
+    <color name="colorCardBackground">#ffffff</color>
+    <color name="textColorDarkPrimary">#4a4a4a</color>
+    <color name="textColorDarkInput">#000000</color>
+    <color name="textColorDarkToolbar">#4a4a4a</color>
+    <color name="textColorDarkSecondary">#717171</color>
+    <color name="textColorDarkHint">#cbcbcb</color>
+    <color name="textColorLightPrimary">#ffffff</color>
+
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_bg_outgoing_bubble"
+        android:gravity="center_vertical|right"
+        android:minHeight="42dp"
+        android:minWidth="200dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingRight="23dp"
+        android:paddingTop="10dp">
+
+        <fontdroid.TextView
+            android:id="@+id/txtText"
+            style="@style/iranSansMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="right"
+            android:text="سلام سلام سلام سلام سلام سلام سلام سلام سلا سلامسلام سلام سلام سلام سلا"
+            android:textColor="#ffffff"
+            android:textSize="13dp" />
+
+        <fontdroid.TextView
+            android:id="@+id/txtDate"
+            style="@style/iranSansMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:lines="1"
+            android:text="22/8/12"
+            android:textColor="#ffffff"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+</LinearLayout>

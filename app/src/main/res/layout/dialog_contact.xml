@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <fontdroid.TextView
+                        android:id="@+id/txtErrorDialogText2"
+                        style="@style/AppFont"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:lineSpacingExtra="7dp"
+                        android:minHeight="60dp"
+                        android:text="ادوسا اولين سامانه يکپارچه و هوشمند سرويس مدارس"
+                        android:textColor="#000000"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <fontdroid.TextView
+                        android:id="@+id/txtErrorDialogText"
+                        style="@style/AppFont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:lineSpacingExtra="7dp"
+                        android:minHeight="60dp"
+                        android:text="در صورت بروز هر گونه مشکل یا سوال در هر زمان از شبانه روز حتی روز های تعطیل با راه هاي ارتباطي زیر تماس حاصل بفرمایید تا در کمترین زمان پاسخگو باشیم."
+                        android:textColor="#000000"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <fontdroid.TextView
+                        android:id="@+id/txtErrorDialogTexte"
+                        style="@style/AppFont"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center"
+                        android:lineSpacingExtra="7dp"
+                        android:minHeight="60dp"
+                        android:text="09385476103 پشتيباني ادوسا1"
+                        android:textColor="#000000"
+                        android:textSize="12dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="32dip"
+                        android:layout_height="32dip"
+                        app:srcCompat="@mipmap/online_help"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <fontdroid.TextView
+                            android:id="@+id/txtErrorDialogTexte2"
+                            style="@style/AppFont"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:lineSpacingExtra="7dp"
+                            android:minHeight="60dp"
+                            android:text="09385476103 پشتيباني ادوسا"
+                            android:textColor="#000000"
+                            android:textSize="12dp"/>
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="32dp"
+                            android:layout_height="32dip"
+                            app:srcCompat="@mipmap/online_help"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/scroll"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#dddddd"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_notific"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <fontdroid.TextView
+                            android:id="@+id/txtErrorDialogTexte21"
+                            style="@style/AppFont"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:lineSpacingExtra="7dp"
+                            android:minHeight="60dp"
+                            android:text="کانال اطلاع رساني سامانه"
+                            android:textColor="#000000"
+                            android:textSize="12dp"/>
+
+                        <ImageView
+                            android:id="@+id/imageView31"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="4dp"
+                            app:srcCompat="@mipmap/telegram"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/scroll"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#dddddd"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <fontdroid.TextView
+                            android:id="@+id/txtErrorDialogTexte2112"
+                            style="@style/AppFont"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:lineSpacingExtra="7dp"
+                            android:minHeight="60dp"
+                            android:text="گروه پرسش و پاسخ  سامانه"
+                            android:textColor="#000000"
+                            android:textSize="12dp"/>
+
+                        <ImageView
+                            android:id="@+id/imageView3113"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="4dp"
+                            app:srcCompat="@mipmap/telegram"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/scroll"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#dddddd"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <fontdroid.TextView
+                            android:id="@+id/txtErrorDialogTexte2143"
+                            style="@style/AppFont"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:lineSpacingExtra="7dp"
+                            android:minHeight="60dp"
+                            android:text="ایمیل پشتیبانی سامانه(ems.edusa.school@gmail.com)"
+                            android:textColor="#000000"
+                            android:textSize="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/imageView3154"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginRight="4dp"
+                            app:srcCompat="@mipmap/mail"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/scroll"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#dddddd"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/lay_tehran_edusa"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@mipmap/pas"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <fontdroid.Button
+                    android:id="@+id/btnErrorDialog"
+                    style="@style/AppFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/imageView61"
+                    android:background="@color/colorTopBar"
+                    android:text="تایید"
+                    android:textColor="@color/textColorLight"
+                    android:textSize="11dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</LinearLayout>

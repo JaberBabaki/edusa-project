@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:minHeight="240dp"
+    android:id="@+id/lytMain"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fontdroid.TextView
+            android:id="@+id/txtNoResult"
+            style="@style/iranSansBold"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackgroundDark"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="شما تا کنون هیچ نقطه هشداری تعریف ننموده اید."
+            android:textColor="@color/textColorDarkPrimary"
+            android:textSize="11dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rclPoints"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackgroundDark"
+            android:minWidth="254dp" />
+    </LinearLayout>
+
+</LinearLayout>

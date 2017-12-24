@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ir.edusa.parents.Utils.SquareImageView
+                android:id="@+id/imgPic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/man_profile_pic" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <fontdroid.TextView
+                android:id="@+id/txtName"
+                style="@style/iranSansBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:text="پویا"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <fontdroid.TextView
+                android:id="@+id/dadasd"
+                style="@style/iranSansMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="5dp"
+                android:text="نام"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <fontdroid.TextView
+                android:id="@+id/txtLastName"
+                style="@style/iranSansBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:text="یوسف نژاد"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <fontdroid.TextView
+                android:id="@+id/dadassd"
+                style="@style/iranSansMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="5dp"
+                android:text="نام خانوادگی"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <fontdroid.TextView
+                android:id="@+id/txtPhone"
+                style="@style/iranSansBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:text="09195176778"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <fontdroid.TextView
+                android:id="@+id/dadawsd"
+                style="@style/iranSansMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="5dp"
+                android:text="تلفن"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lytOrganization"
+            android:orientation="horizontal">
+
+            <fontdroid.TextView
+                android:id="@+id/txtOrganization"
+                style="@style/iranSansBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp"
+                android:text="امیر کبیر"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <fontdroid.TextView
+                android:id="@+id/dadaswsd"
+                style="@style/iranSansMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="5dp"
+                android:text="مدرسه"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fontdroid.TextView
+                android:id="@+id/dadassswsd"
+                style="@style/iranSansMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:gravity="center"
+                android:text="آدرس"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+            <fontdroid.TextView
+                android:id="@+id/txtAddress"
+                style="@style/iranSansBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:text="امیر کبیر"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/lytShowOnMap"
+                style="@style/ActionButtonContainer"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="40dp"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <fontdroid.TextView
+                    android:id="@+id/txtEnter"
+                    style="@style/ActionButtonLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:text="نمایش روی نقشه " />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

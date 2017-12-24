@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackgroundDark"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:minWidth="240dp"
+        android:orientation="vertical">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/lytDate"
+            style="@style/ActionButtonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:minWidth="120dp"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <ir.edusa.parents.Utils.RTextView
+                android:id="@+id/txtDate"
+                style="@style/ActionButtonLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:text="28/11/96"
+                app:minTextSize="9dp" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="120dp"
+                android:orientation="vertical">
+
+                <ir.edusa.parents.Utils.RTextView
+                    style="@style/ActionButtonLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:text="تا ساعت"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:minTextSize="9dp" />
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/lytTimeTo"
+                    style="@style/ActionButtonContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <ir.edusa.parents.Utils.RTextView
+                        android:id="@+id/txtTimeTo"
+                        style="@style/ActionButtonLabel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:text="11:12"
+                        app:minTextSize="9dp" />
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp">
+
+                <include layout="@layout/divider_vertical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minWidth="120dp"
+                android:orientation="vertical">
+
+                <ir.edusa.parents.Utils.RTextView
+                    style="@style/ActionButtonLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:text="از ساعت"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:minTextSize="9dp" />
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/lytTimeFrom"
+                    style="@style/ActionButtonContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <ir.edusa.parents.Utils.RTextView
+                        android:id="@+id/txtTimeFrom"
+                        style="@style/ActionButtonLabel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="3dp"
+                        android:text="22:44"
+                        app:minTextSize="9dp" />
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/lytAccept"
+            style="@style/ActionButtonContainer"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:visibility="visible"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <fontdroid.TextView
+                android:id="@+id/txtEnter"
+                style="@style/ActionButtonLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:text="انتخاب زمان" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
