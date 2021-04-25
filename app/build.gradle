@@ -16,19 +16,19 @@ android {
             storeFile file('D:\\anddev\\project\\android_studio\\trama.jks')
             storePassword '123456'
             keyAlias 'trama'
-            keyPassword '123456's
+            keyPassword '123456'
         }
     }
     buildTypes {
 
         release {
-            debuggable false
+            debuggable true
             minifyEnabled true
             signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
-            debuggable true
+            debuggable false
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
