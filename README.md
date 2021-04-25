@@ -9,5 +9,6 @@
 <table style="width:100%">
    <tr>
     <td><img src="https://github.com/JaberBabaki/edusa-project/blob/master/pic/4.jpg" width="250" height="400" /></td>
+      <td><img src="https://github.com/JaberBabaki/edusa-project/blob/master/pic/5.jpg" width="250" height="400" /></td>
   </tr>
 </table>
